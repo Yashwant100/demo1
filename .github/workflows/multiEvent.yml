@@ -7,3 +7,10 @@ jobs:
       - name: new-step
         run: echo "Hello World!"
 
+'on' : pull
+jobs:
+  new-job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: new-step1
+        run: echo "this is for pull"
