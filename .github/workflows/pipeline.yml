@@ -5,7 +5,7 @@ on :
 
 jobs :
  on-push :
-  runs-on : ubuntulatest
+  runs-on : ubuntu-latest
   steps :
    - name : "running on push"
      run : echo "successfull"
