@@ -9,4 +9,4 @@ jobs :
   runs-on : ubuntu latest
   steps :
    - name : "running on push"
-   run : echo "successfull"
+     run : echo "successfull"
