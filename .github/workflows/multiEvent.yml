@@ -7,8 +7,8 @@ jobs:
       - name: new-step
         run: echo "Hello World!"
 
-'on' : pull
-jobs:
+'on1' : pull
+jobss:
   new-job1:
     runs-on: ubuntu-latest
     steps:
