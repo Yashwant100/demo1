@@ -1,9 +1,8 @@
-
-name: "Multi Event Pipeline" # name of workflow
-'on': push
+name: "multi event pipeline"
+on: push
 jobs:
-  on-push:
-    runs-on: "ubantu latest"
+  job-2:
+    runs-on: ubantu-latest
     steps:
-      -name: "running on main/test"
-      run: echo "running on main"
+      -name: "new job"
+        run: echo "this is new job"
