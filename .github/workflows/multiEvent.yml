@@ -3,7 +3,7 @@ name: multi event pipeline
 jobs:
   job-2:
     runs-on: ubantu-latest
-    steps: null
+    steps:
     '-name': new job
     run: echo "this is new job"
 
