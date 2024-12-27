@@ -1,9 +1,9 @@
-name: "multi event pipeline"
+name: hello-world
 'on': push
 jobs:
-  job-2:
-    runs-on: ubantu-latest
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-    -name: new job
-    run: echo "this is new job"
+      - name: my-step
+        run: echo "Hello World!"
 
