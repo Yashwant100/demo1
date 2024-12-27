@@ -1,0 +1,11 @@
+name: demo
+on:
+  push
+  pull_request
+
+jobs:
+  on-push:
+    runs-on: ubuntu latest
+    steps:
+      - name: "running on master"
+run: echo"hello everybuddy"
