@@ -1,8 +1,9 @@
-name: "multi event pipeline"
-on: push
+name: multi event pipeline
+'on': push
 jobs:
   job-2:
     runs-on: ubantu-latest
-    steps:
-      -name: "new job"
-        run: echo "this is new job"
+    steps: null
+    '-name': new job
+    run: echo "this is new job"
+
