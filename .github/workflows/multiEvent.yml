@@ -1,0 +1,14 @@
+name: "Multi Event Pipeline" # name of workflow
+on:
+  push:
+    branches:
+      - main
+      - test
+
+
+jobs:
+  on-push:
+    runs-on: "ubantu latest"
+    steps:
+      -name: "running on main/test"
+        run: echo "running on main" 
