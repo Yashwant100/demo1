@@ -9,12 +9,14 @@ on :
 
 jobs :
  on-push :
+  if : github.event_name == 'push'
   runs-on : ubuntu-latest
   steps :
    - name : "running on push"
      run : echo "push successfull"
  
  on-pull_request : 
+  if : github.event_name == 'pull_request'
   runs-on : ubuntu-latest
   steps :
    - name : "running on pull"
