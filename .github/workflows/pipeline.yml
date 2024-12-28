@@ -1,11 +1,21 @@
 name : "Pipeline"
 on :
  push : 
+  branches : ["main"]
+ 
+ pull_request :
   branches : ["main"] 
+
 
 jobs :
  on-push :
   runs-on : ubuntu-latest
   steps :
    - name : "running on push"
-     run : echo "successfull"
+     run : echo "push successfull"
+ 
+ on-pull_request : 
+  runs-on : ubuntu-latest
+  steps :
+   - name : "running on pull"
+     run : echo "pull successfull"
